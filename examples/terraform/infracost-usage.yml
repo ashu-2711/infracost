@@ -6,7 +6,7 @@ version: 0.1
 resource_usage:
   aws_lambda_function.hello_world:
     monthly_requests: 100000000
-    request_duration_ms: 100  # Try changing this to 100 (milliseconds) to compare costs
+    request_duration_ms: 250  # Try changing this to 100 (milliseconds) to compare costs
     
   aws_cloudtrail.my_cloudtrail:
     monthly_additional_management_events: 100000 # Monthly additional copies of read and write management events. The first copy of management events per region is free, so this should only be non-zero if there are multiple trails recording management events in this region.
